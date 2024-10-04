@@ -1,5 +1,13 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, IconButton, Box } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Box,
+  Typography,
+  Button,
+} from "@mui/material";
+
 import GpsFixedIcon from "@mui/icons-material/GpsFixed";
 import { Link } from "react-router-dom";
 
@@ -57,6 +65,14 @@ const Navbar = () => {
             </Typography>
             <Typography variant="h6" sx={{ mx: 2 }}>
               <Link
+                to="/pages"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Pages
+              </Link>
+            </Typography>
+            <Typography variant="h6" sx={{ mx: 2 }}>
+              <Link
                 to="/test"
                 style={{ textDecoration: "none", color: "black" }}
               >
@@ -64,6 +80,9 @@ const Navbar = () => {
               </Link>
             </Typography>
           </Box>
+          <Button variant="contained" color="primary" sx={{ ml: "auto" }}>
+            Sign in
+          </Button>
         </Toolbar>
       </AppBar>
       <Toolbar />{" "}

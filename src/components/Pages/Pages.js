@@ -1,7 +1,12 @@
 import React from "react";
+import Slide5 from "../Slideshow/SLide5";
 
 const Pages = () => {
-  return <div>Pages Page</div>;
+  return (
+    <div>
+      <Slide5 />
+    </div>
+  );
 };
 
 export default Pages;

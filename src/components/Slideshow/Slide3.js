@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Slide3 = () => {
-  useEffect(() => {
-    window.location.href = "/html/template2/tempSlide.html";
-  }, []);
-
-  return null;
+  return (
+    <iframe
+      src="/html/templateSlide3/tempSlide.html"
+      style={{ width: "100%", height: "100vh", border: "none" }}
+      title="Slide 3"
+    />
+  );
 };
 
 export default Slide3;
