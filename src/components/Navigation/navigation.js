@@ -4,8 +4,6 @@ import Blog from "../Blog/Blog";
 import Gallery from "../Gallery/Gallery";
 import Pages from "../Pages/Pages";
 import Slide2 from "../Slideshow/Slide2";
-import CitiesSlider from "../Slideshow/CitiesSlider";
-import slides from "../Slideshow/CitiesSlider-infoList";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 function Navigation() {
@@ -21,7 +19,6 @@ function Navigation() {
         <Route path="/pages" element={<Pages />} />
         <Route path="/test" element={<Slide2 />} />
       </Routes>
-      {location.pathname === "/" && <CitiesSlider slides={slides} />}
     </>
   );
 }
